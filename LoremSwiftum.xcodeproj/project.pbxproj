@@ -7,22 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		802CD5CE1A1E9F690067165F /* LoremSwiftum.h in Headers */ = {isa = PBXBuildFile; fileRef = 80B67B4419E5603D00D2DEC2 /* LoremSwiftum.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		808383EB1BAA98B80075603A /* LoremSwiftum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808383EA1BAA98B80075603A /* LoremSwiftum.swift */; };
-		80863FDE1BD7869F00C3D182 /* LoremSwiftum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808383EA1BAA98B80075603A /* LoremSwiftum.swift */; };
-		80863FDF1BD786A300C3D182 /* LoremSwiftum.h in Headers */ = {isa = PBXBuildFile; fileRef = 80B67B4419E5603D00D2DEC2 /* LoremSwiftum.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		80DF35101BF8F04A004F17C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80DF350F1BF8F04A004F17C5 /* Foundation.framework */; };
 		80DF35111BF8F054004F17C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80DF350F1BF8F04A004F17C5 /* Foundation.framework */; };
+		954F1914236073840082AC0E /* LoremSwiftum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954F1911236073840082AC0E /* LoremSwiftum.swift */; };
+		954F1915236073840082AC0E /* LoremSwiftum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954F1911236073840082AC0E /* LoremSwiftum.swift */; };
+		954F1917236073FC0082AC0E /* LoremSwiftum.h in Headers */ = {isa = PBXBuildFile; fileRef = 954F1916236073FC0082AC0E /* LoremSwiftum.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		954F1918236073FC0082AC0E /* LoremSwiftum.h in Headers */ = {isa = PBXBuildFile; fileRef = 954F1916236073FC0082AC0E /* LoremSwiftum.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		802CD5B41A1E9F090067165F /* LoremSwiftum.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LoremSwiftum.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		808383EA1BAA98B80075603A /* LoremSwiftum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoremSwiftum.swift; sourceTree = "<group>"; };
 		808384011BAAB2440075603A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		80863FD21BD7864C00C3D182 /* LoremSwiftum.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LoremSwiftum.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		80B67B4419E5603D00D2DEC2 /* LoremSwiftum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoremSwiftum.h; sourceTree = "<group>"; };
 		80DF350F1BF8F04A004F17C5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		80DF35121BF8F082004F17C5 /* LoremSwiftum.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = LoremSwiftum.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		954F190D2360713F0082AC0E /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = SOURCE_ROOT; };
+		954F1911236073840082AC0E /* LoremSwiftum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoremSwiftum.swift; sourceTree = "<group>"; };
+		954F1916236073FC0082AC0E /* LoremSwiftum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoremSwiftum.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +73,7 @@
 		8094BE5919E5521A00CBE5A0 = {
 			isa = PBXGroup;
 			children = (
+				954F190D2360713F0082AC0E /* Package.swift */,
 				80B67B4219E5603D00D2DEC2 /* Sources */,
 				802CD5CF1A1EA1A80067165F /* Playgrounds */,
 				808383FF1BAAB2440075603A /* Supporting Files */,
@@ -95,10 +97,18 @@
 		80B67B4219E5603D00D2DEC2 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				80B67B4419E5603D00D2DEC2 /* LoremSwiftum.h */,
-				808383EA1BAA98B80075603A /* LoremSwiftum.swift */,
+				954F190F236073840082AC0E /* LoremSwiftum */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		954F190F236073840082AC0E /* LoremSwiftum */ = {
+			isa = PBXGroup;
+			children = (
+				954F1916236073FC0082AC0E /* LoremSwiftum.h */,
+				954F1911236073840082AC0E /* LoremSwiftum.swift */,
+			);
+			path = LoremSwiftum;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -108,7 +118,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				802CD5CE1A1E9F690067165F /* LoremSwiftum.h in Headers */,
+				954F1918236073FC0082AC0E /* LoremSwiftum.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,7 +126,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80863FDF1BD786A300C3D182 /* LoremSwiftum.h in Headers */,
+				954F1917236073FC0082AC0E /* LoremSwiftum.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,7 +230,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				808383EB1BAA98B80075603A /* LoremSwiftum.swift in Sources */,
+				954F1915236073840082AC0E /* LoremSwiftum.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,7 +238,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80863FDE1BD7869F00C3D182 /* LoremSwiftum.swift in Sources */,
+				954F1914236073840082AC0E /* LoremSwiftum.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
